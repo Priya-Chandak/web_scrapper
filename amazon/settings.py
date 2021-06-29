@@ -14,6 +14,15 @@ NEWSPIDER_MODULE = 'amazon.spiders'
 
 ITEM_PIPELINES = {
   'amazon.pipelines.AmazonPipeline': 300,
+
+}
+
+DOWNLOAD_TIMEOUT = 1000
+DOWNLOAD_DELAY = 1
+DEPTH_LIMIT = 20
+EXTENSIONS = {
+    'scrapy.extensions.telnet.TelnetConsole': None,
+    'scrapy.extensions.closespider.CloseSpider': 1
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

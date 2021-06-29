@@ -3,9 +3,8 @@ import scrapy
 class AmazonItem(scrapy.Item):
   # define the fields for your item here like:
   product_name = scrapy.Field()
-  product_sale_price = scrapy.Field()
-  product_category = scrapy.Field()
-  product_original_price = scrapy.Field()
-  product_availability = scrapy.Field()
+  sale_price = scrapy.Field()
   product_mrp = scrapy.Field()
-  
+  product_rating = scrapy.Field()
+  total_ratings = scrapy.Field()
+  tyre_size = scrapy.Field()
