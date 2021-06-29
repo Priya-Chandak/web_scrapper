@@ -18,7 +18,7 @@ ITEM_PIPELINES = {
 }
 
 DOWNLOAD_TIMEOUT = 1000
-DOWNLOAD_DELAY = 1
+DOWNLOAD_DELAY = 5
 DEPTH_LIMIT = 20
 EXTENSIONS = {
     'scrapy.extensions.telnet.TelnetConsole': None,

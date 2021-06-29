@@ -1,5 +1,6 @@
 import scrapy
- 
+import datetime 
+
 class AmazonItem(scrapy.Item):
   # define the fields for your item here like:
   product_name = scrapy.Field()
@@ -8,3 +9,5 @@ class AmazonItem(scrapy.Item):
   product_rating = scrapy.Field()
   total_ratings = scrapy.Field()
   tyre_size = scrapy.Field()
+  
+  
